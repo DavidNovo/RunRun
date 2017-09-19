@@ -1,11 +1,13 @@
-RunRun.MainMenu = function() {
+var BasicGame = BasicGame || {};
+
+BasicGame.MainMenu = function() {
 
     this.music = null;
     this.playButton = null;
 
 };
 
-RunRun.MainMenu.prototype = {
+BasicGame.MainMenu.prototype = {
 
     create: function() {
 

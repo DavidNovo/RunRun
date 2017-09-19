@@ -1,10 +1,11 @@
-var RunRun = RunRun || {};
+var BasicGame = BasicGame || {};
 
-RunRun.Boot = function() {};
+
+BasicGame.Boot = function() {};
 
 console.log("hello world!!!!!!!!!");
 
-RunRun.Boot.prototype = {
+BasicGame.Boot.prototype = {
 
     init: function() {
 
@@ -14,7 +15,7 @@ RunRun.Boot.prototype = {
         //  Phaser will automatically pause if the browser tab the game is in loses focus. You can disable that here:
         this.stage.disableVisibilityChange = true;
 
-        if (this.RunRun.device.desktop) {
+        if (this.game.device.desktop) {
             //  If you have any desktop specific settings, they can go in here
             this.scale.pageAlignHorizontally = true;
         } else {

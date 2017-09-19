@@ -1,4 +1,6 @@
-RunRun.Preloader = function(RunRun) {
+var BasicGame = BasicGame || {};
+
+BasicGame.Preloader = function(game) {
 
     this.background = null;
     this.preloadBar = null;
@@ -7,7 +9,7 @@ RunRun.Preloader = function(RunRun) {
 
 };
 console.log("preloader!!!!!!!!!");
-RunRun.Preloader.prototype = {
+BasicGame.Preloader.prototype = {
 
     preload: function() {
 
